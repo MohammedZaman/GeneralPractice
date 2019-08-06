@@ -12,10 +12,11 @@ package Inheritance;
 public class Main {
     public static void main(String[] args) {
         
-      Programmer programmer = new Programmer();
+      Programmer programmer = new Programmer("saifuz",40,15);
+      Contracter contracter = new Contracter("Afzal",40,10,24);
       System.out.println("----- Inheritance -----");
-      System.out.println("The programmer salary is £"+programmer.getSalary());
-      System.out.println("The bonus for this year is £"+programmer.getBonus());
+      System.out.println(programmer.getName()+" the Programmer Annual Salary  £"+programmer.getYearlyWage());
+      System.out.println(contracter.getName()+" the Contracter Annual Salary  £"+contracter.getYearlyWage());
       
       
         
@@ -34,7 +35,7 @@ abstract class Employee{
     }
     
   
-    public abstract double getWeeklyWage();
+    public abstract double getYearlyWage();
 }
 
 class Programmer extends Employee{
@@ -48,8 +49,8 @@ class Programmer extends Employee{
     }
 
     @Override
-    public double getWeeklyWage() {
-      return hoursPerWeek * payPerHour * 56;      
+    public double getYearlyWage() {
+      return (hoursPerWeek * payPerHour) * 56;      
     }
 }
 
@@ -66,7 +67,7 @@ class Contracter extends Employee{
         
     }
     @Override
-    public double getWeeklyWage() {
-       return hoursPerWeek * payPerHour * weekLength;    
+    public double getYearlyWage() {
+       return (hoursPerWeek * payPerHour) * weekLength;    
     }
 }
