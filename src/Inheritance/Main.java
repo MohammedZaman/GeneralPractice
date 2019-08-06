@@ -22,26 +22,51 @@ public class Main {
     }
 }
 
-class Employee{
-    private double salary = 150000.0;
-    
-    public double getSalary() {
-        return salary;
+abstract class Employee{
+    private String Name;
+
+    public String getName() {
+        return Name;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    } 
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+    
+  
+    public abstract double getWeeklyWage();
 }
 
 class Programmer extends Employee{
-    private double bonus = 2000;
+    private int hoursPerWeek;
+    private double payPerHour;
     
-    public double getBonus() {
-        return bonus;
+    public Programmer(String name ,int hoursPerWeek , double payPerHour){
+        this.setName(name);
+        this.hoursPerWeek = hoursPerWeek;
+        this.payPerHour = payPerHour;
     }
 
-    public void setBonus(double bonus) {
-        this.bonus = bonus;
+    @Override
+    public double getWeeklyWage() {
+      return hoursPerWeek * payPerHour * 56;      
+    }
+}
+
+class Contracter extends Employee{
+    private int hoursPerWeek;
+    private double payPerHour;
+    private int weekLength;
+    
+    public Contracter(String name ,int hoursPerWeek , double payPerHour,int weekLength){
+        this.setName(name);
+        this.hoursPerWeek = hoursPerWeek;
+        this.payPerHour = payPerHour;
+        this.weekLength = weekLength;
+        
+    }
+    @Override
+    public double getWeeklyWage() {
+       return hoursPerWeek * payPerHour * weekLength;    
     }
 }
