@@ -13,6 +13,7 @@ public class Main {
     public static void main(String[] args) {
         
       Programmer programmer = new Programmer();
+      System.out.println("----- Inheritance -----");
       System.out.println("The programmer salary is £"+programmer.getSalary());
       System.out.println("The bonus for this year is £"+programmer.getBonus());
       
