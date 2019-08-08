@@ -11,15 +11,24 @@ package Loops;
  */
 public class Main {
     public static void main(String[] args) {
-        //forLoops();
-        //nestedLoops();
-        //forEachLoop();
+        forLoops();
+        nestedLoops();
+        forEachLoop();
         whileLoop();
+        doWhile();
          
     }
     
     
     
+    
+    private static void doWhile(){
+        int i = 0;
+        do{
+        System.out.print("$");
+        i++;
+        }while(i < 5);
+    }
     
     private static void whileLoop(){
     int  i = 0;    
@@ -27,7 +36,6 @@ public class Main {
     System.out.print("X");
     i++;
     }
-    
     }
     
     
