@@ -12,26 +12,46 @@ package Loops;
 public class Main {
     public static void main(String[] args) {
         //forLoops();
-        nestedLoops();
+        //nestedLoops();
+        forEachLoop();
          
     }
     
     
-    private static void nestedLoops(){
-    int[][] graph = new int[5][5]; 
     
-    for(int i = 0 ; i < graph.length; i++){
+    
+    
+    private static void forEachLoop(){
+    
+    int [] graph = new int[5];
+  
+   
+    for(int i = 0; i < graph.length;i++){
+        graph[i] = 5;
+    }
+    
+    
+    for(int cell: graph){
+        System.out.println(cell);
+    }
+    
+    }
+    
+    
+    private static void nestedLoops(){  
+      int[][] graph = new int[5][5]; 
+    
+      for(int i = 0 ; i < graph.length; i++){
         for(int j = 0; j < graph.length;j++){
             graph[i][j] = 1;
         }
-    }
-     for(int i = 0 ; i < graph.length; i++){
+      }
+      for(int i = 0 ; i < graph.length; i++){
         System.out.println(System.lineSeparator());
         for(int j = 0; j < graph.length;j++){
             System.out.print(graph[i][j]);
         }
-    }
-    
+      }
     }
     
     
