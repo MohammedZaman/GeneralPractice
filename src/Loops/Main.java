@@ -13,12 +13,22 @@ public class Main {
     public static void main(String[] args) {
         //forLoops();
         //nestedLoops();
-        forEachLoop();
+        //forEachLoop();
+        whileLoop();
          
     }
     
     
     
+    
+    private static void whileLoop(){
+    int  i = 0;    
+    while(i < 5){
+    System.out.print("X");
+    i++;
+    }
+    
+    }
     
     
     private static void forEachLoop(){
