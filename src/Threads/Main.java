@@ -14,24 +14,24 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         
         
-        Thread thread = new RandomThread("ThreadY");
-        thread.start();
+//        Thread thread = new RandomThread("ThreadY");
+//        thread.start();
+//        
+//        for(int i = 0; i< 7; i++){
+//        System.out.println("I am Main Thread " + i );
+//        if(i == 3){
+//            thread.join();
+//            System.out.println("Threads Joined");
+//        }
+//        }
+//        
         
-        for(int i = 0; i< 7; i++){
-        System.out.println("I am Main Thread " + i );
-        if(i == 3){
-            thread.join();
-            System.out.println("Threads Joined");
+        // 1D Array 
+        int[] arr =  { 1, 2 }; 
+        //Standard Loop 
+        for (int i = 0; i < 2; i++){ 
+               System.out.println("arr[" + i + "] = " + arr[i]); 
         }
-        }
-        
-        
-        
-        
-       
-      
-        
-  
     }
     
 }
