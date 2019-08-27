@@ -10,5 +10,6 @@ package FactoryPattern;
  * @author mohammedzaman
  */
 public class Square extends Shape {
-    
+    public Square(){
+    }
 }

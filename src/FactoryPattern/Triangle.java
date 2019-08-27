@@ -10,5 +10,5 @@ package FactoryPattern;
  * @author mohammedzaman
  */
 public class Triangle extends Shape {
-    
+   public Triangle(){}
 }

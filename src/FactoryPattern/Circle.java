@@ -10,5 +10,6 @@ package FactoryPattern;
  * @author mohammedzaman
  */
 public class Circle extends Shape {
-    
+    public Circle(){
+    }
 }

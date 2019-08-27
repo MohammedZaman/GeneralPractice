@@ -5,17 +5,18 @@
  */
 package FactoryPattern;
 
-import Inheritance.*;
-
 /**
  *
  * @author mohammedzaman
  */
-public class Main {
+public class mainMethod {
+    
     public static void main(String[] args) {
-      
-       ShapeFactory shapeF  = new  ShapeFactory();
-
-      
+      ShapeFactory shapeF = new ShapeFactory();
+      Shape s = shapeF.getShape(Shapes.TRIANGLE);
+      if(s instanceof Triangle){
+           System.out.println("Triangle");
+      }
     }
+
 }
