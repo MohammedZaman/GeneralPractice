@@ -5,17 +5,13 @@
  */
 package FactoryPattern;
 
-import Inheritance.*;
-
 /**
  *
  * @author mohammedzaman
  */
-public class Main {
-    public static void main(String[] args) {
-      
-       ShapeFactory shapeF  = new  ShapeFactory();
-
-      
-    }
+public enum Shapes {
+    CIRCLE,
+    SQAURE,
+    TRIANGLE
+    
 }

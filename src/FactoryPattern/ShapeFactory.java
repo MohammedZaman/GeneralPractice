@@ -10,7 +10,17 @@ package FactoryPattern;
  * @author mohammedzaman
  */
 public class ShapeFactory {
-    public void getShape(){
     
+    public Shape getShape(enum shape){
+        switch(shape){
+            case: Shapes.CIRCLE;
+            return new Circle();
+            break;
+            case: Shapes.SQAURE;
+            return new Square();
+            case: Shapes.TRIANGLE;
+            return new Triangle();
+        }
+       return new Shape();
     }
-}
+    }
