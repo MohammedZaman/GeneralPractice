@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package OOP;
 
+package OOP;
 /**
  *
  * @author mohammedzaman
@@ -22,7 +17,6 @@ public class Mainclass {
         
         admin.accessDB();
        
-        
         admin.signOut();
         customer.signOut();
         driver.signOut();

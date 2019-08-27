@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  *
  * @author mohammedzaman
  */
-public class RandomThread implements Runnable {
+public class RandomThread extends Thread {
 
     private String name;
     public RandomThread(String nameOfThread){
