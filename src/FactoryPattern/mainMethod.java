@@ -13,10 +13,23 @@ public class mainMethod {
     
     public static void main(String[] args) {
       ShapeFactory shapeF = new ShapeFactory();
-      Shape s = shapeF.getShape(Shapes.TRIANGLE);
-      if(s instanceof Triangle){
-           System.out.println("Triangle");
+      
+      Shape T = shapeF.getShape(Shapes.TRIANGLE);
+      Shape S = shapeF.getShape(Shapes.SQAURE);
+      Shape C = shapeF.getShape(Shapes.CIRCLE);
+     
+
+      
+      if(T instanceof Triangle){
+           System.out.println("Triangle");   
       }
+      if(S instanceof Square){
+           System.out.println("Square");
+      }
+      if(C instanceof Circle){
+           System.out.println("Circle");
+      }
+      
     }
 
 }
