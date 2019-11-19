@@ -66,15 +66,16 @@ public class CustomLinkedList {
     }
 
     /**
-     * delete node with value 
+     * delete node with value
+     *
      * @param data value to be deleted
      */
     public void delete(int data) {
-        if(head == null){
-        return;
+        if (head == null) {
+            return;
         }
-        if(head.data == data){
-        head = head.next;
+        if (head.data == data) {
+            head = head.next;
         }
         Node currentNode = head;
         while (currentNode.next != null) {
@@ -85,9 +86,32 @@ public class CustomLinkedList {
             currentNode = currentNode.next;
         }
     }
+
+    /**
+     * Deleting a node based on index
+     *
+     * @param index the position where the node
+     */
+    public void deleteAt(int index) {
+        if (head == null) {
+            return;
+        }
+        if (index == 0) {
+            head = head.next;
+        }
+        Node currentNode = head;
+        int i = 0;
+        while (currentNode.next != null) {
+            i++;
+            if (i == index) {
+                currentNode.next = currentNode.next.next;
+                return;
+            }
+            currentNode = currentNode.next;
+        }
+    }
+
     
-    
-  
 
     /**
      * Display all node data values

@@ -20,8 +20,8 @@ public class LinkedListHCL {
         linkedList.insertSorted(7);
         linkedList.insertSorted(2);
         
-        linkedList.delete(7);
-        linkedList.deleteAt(2);
+        linkedList.reverseList();
+ 
         
        
         
