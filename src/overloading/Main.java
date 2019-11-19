@@ -15,10 +15,12 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Multiply mult = new Multiply();
-       System.out.println(mult.times(5));
-       System.out.println(mult.times(5,10));
-       System.out.println(mult.times(5,8,2));
+//       Multiply mult = new Multiply();
+//       System.out.println(mult.times(5));
+//       System.out.println(mult.times(5,10));
+//       System.out.println(mult.times(5,8,2));
+
+
     }
     
 }
