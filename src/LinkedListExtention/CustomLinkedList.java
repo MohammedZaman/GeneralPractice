@@ -111,7 +111,23 @@ public class CustomLinkedList {
         }
     }
 
-    
+    /**
+     * Reversing a Linked list 
+     */
+    public void reverseList() {
+        Node currentNode = head;
+        Node nextNode = null;
+        Node prevNode = null;
+       
+        while (currentNode != null) {
+            nextNode = currentNode.next;
+            currentNode.next = prevNode; 
+            prevNode = currentNode;
+            currentNode = nextNode;
+        
+        }
+        head = prevNode;
+    }
 
     /**
      * Display all node data values
@@ -122,7 +138,7 @@ public class CustomLinkedList {
         Node currentNode = head;
         String order = "";
         while (currentNode != null) {
-            order += currentNode.data;
+            order += currentNode.data + " ";
             currentNode = currentNode.next;
 
         }
